@@ -1,0 +1,200 @@
+/* Importa uma fonte pixelada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    background-color: #1B5E20;     /* Verde Floresta */
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+    background-repeat: repeat; /* Repete a textura no fundo */
+    background-size: 50px 50px; /* Mantém o tamanho original da textura */
+    color: #FFC107; /* Amarelo Ouro */
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+
+}
+
+
+/* Estilo do cabeçalho */
+header {
+    margin-top: -5px; /* Reduz o espaço acima do texto */
+    font-size: 14px; /* Deixa o texto menor para não roubar atenção */
+    background-color: #1565C0; /* Azul Anil */
+    padding:  10px 0px;
+    border-bottom: 5px solid #D84315; /* Vermelho Terra */
+}
+
+.logo {
+    border: none;
+    width: 280px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Suaviza a entrada e saída */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Aumenta a logo ao passar o mouse */
+    filter: brightness(1.2); /* Aumenta o brilho para dar destaque */
+}
+
+header h1 {
+    font-size: 45px; /* Tamanho maior para destaque */
+    text-shadow: 3px 3px #000000;
+    margin-top: 10px
+}
+
+/* Estilização das seções de jogos */
+section {
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 25px;
+    text-shadow: 3px 3px #000000;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    text-shadow: 3px 3px #999898;
+}
+
+/* Ajuste no espaçamento dos títulos e imagens */
+.jogo-one h1,.jogo-two h1,.jogo-three h1,.jogo-four h1,.jogo-five h1,.jogo-six h1,.jogo-seven h1 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.jogo-one img,.jogo-two img,.jogo-three img,.jogo-four img,.jogo-five img,.jogo-six img,.jogo-seven img {
+    margin-top: 20px; /* Espaçamento acima da imagem */
+}
+
+/* Ajuste no espaçamento dos textos de descrição */
+.jogo-one p,.jogo-two p,.jogo-three p,.jogo-four p,.jogo-five p,.jogo-six,.jogo-seven p {
+    margin-top: 15px; /* Espaçamento antes do parágrafo */
+    margin-bottom: 10px; /* Espaçamento entre parágrafos */
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+    text-align: justify; /* Justifica o texto para melhor leitura */
+}
+
+/* Estilização dos blocos de jogos */
+.jogo-one, .jogo-two, .jogo-three, .jogo-four, .jogo-five, .jogo-six, .jogo-seven {
+    background-color: #F5F5F5; /* Branco Gelo */
+    color: #000;
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 900px;
+    border: 4px solid #FFC107; /* Amarelo Ouro */
+    border-radius: 8px;
+    box-shadow: 5px 5px 0px #000;
+}
+
+.jogo-info {
+    flex: 1; /* Permite que o texto ocupe o espaço restante */
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 15px; /* Ajusta o espaço entre os tópicos e o resumo */
+}
+
+.jogo-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #000;
+}
+
+.jogo-info p {
+    margin-bottom: 8px; /* Adiciona um espaço entre cada linha dos tópicos */
+    margin: 5px 0;
+}
+
+.jogo-info a {
+    display: inline-block;
+    background-color: #D84315;
+    color: #FFC107;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 3px solid #000;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0px #000;
+    transition: all 0.1s linear;
+}
+
+.jogo-info a:hover {
+    background-color: #C62828;
+    box-shadow: 2px 2px 0px #000;
+    transform: translate(2px, 2px);
+}
+
+/* Imagens */
+img {
+    width: 100%; /* Garante que a imagem seja visível */
+    max-width: 1000px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Garante que a imagem apareça */
+    margin: 10px auto; /* Centraliza */
+    border: 3px solid #D84315; /* Vermelho Terra */
+    border-radius: 4px;
+}
+
+/* Links */
+a {
+    margin-top: 15px;
+    display: inline-block;
+    background-color: #D84315; /* Vermelho Terra */
+    color: #FFC107; /* Amarelo Ouro */
+    font-size: 14px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 4px solid #000; /* Borda preta grossa */
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0px #000; /* Sombra para efeito pixelado */
+    transition: all 0.1s linear;
+}
+
+a:hover {
+    background-color: #C62828; /* Vermelho mais escuro */
+    box-shadow: 2px 2px 0px #000; /* Dá um efeito de clique */
+    transform: translate(2px, 2px);
+}
+
+a:active {
+    background-color: #B71C1C; /* Tom ainda mais escuro no clique */
+    box-shadow: none;
+    transform: translate(4px, 4px);
+}
+
+/* Rodapé */
+footer {
+    background-color: #1565C0;
+    color: #FFC107;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+/* Ajuste no espaçamento entre linhas do footer */
+.footer-content p {
+    line-height: 1.8; /* Espaçamento maior entre linhas */
+    margin-bottom: 8px; /* Espaçamento entre os parágrafos */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    .jogo-one, .jogo-two, .jogo-three, .jogo-four {
+        width: 95%;
+    }
+}
